@@ -103,7 +103,7 @@ a{
 .header-content
 {
  
-    height:600px;
+    height:650px;
     background: linear-gradient(rgba(121, 44, 170, 0.6),rgba(198, 33, 237, 0.4)) ,
     url('../src/assets/headerimg.jpg') center/cover;
     background-repeat: no-repeat;

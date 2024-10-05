@@ -1,6 +1,6 @@
 import "./App.css";
 
-
+import { CartProvider } from './pages/CartContext';
 
 // router imports
 
@@ -16,14 +16,14 @@ import Help from "./pages/Help";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Sidebar from "./components/Sidebar";
-
-
+import MyCart from './pages/MyCart'
 
 
 function App() {
   return (
-    <div>
    
+   
+   <CartProvider>
       <Router>
         <Sidebar>
           <Routes>
@@ -37,13 +37,14 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/return" element={<Return />} />
             <Route path="/" element={<Home />} />
+            <Route path="/mycart" element={<MyCart />} />
           </Routes>
         </Sidebar>
       </Router>
       
 
      
-    </div>
+      </CartProvider>
   );
 }
 
