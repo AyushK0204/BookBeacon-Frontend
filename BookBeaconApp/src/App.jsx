@@ -5,7 +5,7 @@ import "./App.css";
 // router imports
 
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Books from "./pages/Books";
 import Logout from "./pages/Logout";
 import Return from "./pages/Return";
@@ -16,6 +16,9 @@ import Help from "./pages/Help";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Sidebar from "./components/Sidebar";
+
+
+
 
 function App() {
   return (
@@ -37,6 +40,7 @@ function App() {
           </Routes>
         </Sidebar>
       </Router>
+      
 
      
     </div>

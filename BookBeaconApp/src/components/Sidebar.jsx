@@ -101,7 +101,7 @@ const [open,setIsOpen]=useState(false);
 
                  <div className="nav_top">
                   <div className="bars">  <FaBars onClick={toggle}/>   </div>
-                { open && <h1 className='nav_logo'>BookBeacon</h1>}
+                { open && <h1 className='nav_logo'> Hello,Sign in </h1>}
                  </div>
 
 

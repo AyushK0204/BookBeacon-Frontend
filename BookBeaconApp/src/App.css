@@ -8,6 +8,7 @@
 
 .sidebar
 {
+  position:fixed;
   background-color: rgb(126, 42, 229);
   color:white;
   height:100vh;
@@ -98,3 +99,47 @@ a{
        display:flex;
 }
 
+
+.header-content
+{
+ 
+    height:600px;
+    background: linear-gradient(rgba(121, 44, 170, 0.6),rgba(198, 33, 237, 0.4)) ,
+    url('../src/assets/headerimg.jpg') center/cover;
+    background-repeat: no-repeat;
+   
+}
+
+.header-title
+{
+  font-size: 5.2rem;
+  padding-top: 100px;
+}
+
+.header-text
+{
+   margin-top:-1.8rem;
+   margin-bottom: 2.8rem;
+   opacity:0.8;
+  flex-direction: column;
+
+}
+.fs-18
+{
+  font-size: 1.8rem;
+}
+
+
+.search-form {
+  background-color: aliceblue;
+  color: black;
+  margin-top: -250px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 400px; 
+  border: 2px solid #ccc; 
+  border-radius: 25px; 
+  font-size: 16px;
+  transition: border-color 0.3s; 
+}

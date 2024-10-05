@@ -1,7 +1,7 @@
 
 .slider {
    
-    position: relative;
+    position:relative;
     width: 1350px; 
     margin: auto;
     
@@ -9,7 +9,7 @@
   }
   
   .slider-container {
-    
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
