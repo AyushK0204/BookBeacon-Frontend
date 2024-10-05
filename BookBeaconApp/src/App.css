@@ -5,30 +5,29 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #6c5ce7, #74b9ff)
-  
+  background: linear-gradient(135deg, #6c5ce7, #74b9ff);
 }
-
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; 
-  width: 100%; 
-  max-width: 1200px; 
-  background-color: #f5f6fa; 
-  padding: 20px; 
-  margin: 0 auto; 
+  height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #f5f6fa;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-
+/* Updated the form-container to make it bigger */
 .form-container {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 40px; /* Increased padding for a more spacious feel */
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  width: 350px; 
+  width: 400px; /* Increased width */
+  max-width: 90%; /* Responsive max width */
 }
 
 .form-toggle {
@@ -38,24 +37,24 @@ body {
 }
 
 .form-toggle button {
-  width: 48%; 
+  width: 48%;
   padding: 12px;
-  background-color: #dfe6e9; 
+  background-color: #dfe6e9;
   border: none;
   cursor: pointer;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: bold;
-  color: #2d3436; 
+  color: #2d3436;
   border-radius: 10px 10px 0 0;
   transition: background-color 0.3s ease;
 }
 
 .form-toggle button:hover {
-  background-color: #b2bec3; 
+  background-color: #b2bec3;
 }
 
 .form-toggle .active {
-  background-color: #0984e3; 
+  background-color: #0984e3;
   color: white;
 }
 
@@ -66,25 +65,25 @@ body {
 
 .form h2 {
   margin-bottom: 20px;
-  color: #2d3436; 
+  color: #2d3436;
   text-align: center;
 }
 
 .form input {
-  padding: 12px;
+  padding: 14px; /* Increased padding for input fields */
   margin-bottom: 15px;
-  border: 2px solid #dfe6e9; 
+  border: 2px solid #dfe6e9;
   border-radius: 8px;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 .form input:focus {
-  border-color: #0984e3; 
+  border-color: #0984e3;
   outline: none;
 }
 
 .form button {
-  padding: 12px;
+  padding: 14px; /* Increased padding for button */
   background-color: #0984e3;
   color: white;
   border: none;
@@ -95,7 +94,7 @@ body {
 }
 
 .form button:hover {
-  background-color: #74b9ff; 
+  background-color: #74b9ff;
 }
 
 .form a {
@@ -107,7 +106,7 @@ body {
 }
 
 .form a:hover {
-  color: #74b9ff; 
+  color: #74b9ff;
 }
 
 .form p {
