@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LoginForm from './LoginForm'
 import ForgotPassword from './ForgotPassword'
+import ResetPassword from './ResetPassword';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
       </Routes>
     </Router>
   );
