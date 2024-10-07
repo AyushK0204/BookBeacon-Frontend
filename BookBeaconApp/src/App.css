@@ -129,7 +129,15 @@ a{
   font-size: 1.8rem;
 }
 
+.headpara{
+  color: rgb(253, 251, 251);
+  height:650px;
+  
 
+  background: linear-gradient(rgba(255, 61, 213, 0.6),rgba(198, 33, 237, 0.4)) ,
+  url('../src/assets/headerbg.jpg') center/cover;
+  background-repeat: no-repeat;
+}
 .search-form {
   background-color: aliceblue;
   color: black;

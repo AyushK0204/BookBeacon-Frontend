@@ -92,7 +92,7 @@
 //   slug:'book10-auth10'
 // }
 
-// ]
+//]
 import React from 'react'
 
 const Books = () => {
