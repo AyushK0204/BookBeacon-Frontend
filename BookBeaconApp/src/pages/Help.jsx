@@ -69,9 +69,6 @@ const Help = () => {
               <p className="text-gray-600 mb-4">
                 If you need more help, feel free to reach out to our support team at <span className="text-blue-600">support@bookbeacon.com</span> or call us at <span className="text-blue-600">+91 9876543210</span>.
               </p>
-              <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
-                Contact Support
-              </button>
             </>
           )}
         </section>
