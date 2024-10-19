@@ -4,7 +4,7 @@ import { CartProvider } from './pages/CartContext';
 
 // router imports
 
-
+import RegistrationPage from './pages/RegistrationPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Books from "./pages/Books";
 import Logout from "./pages/Logout";
@@ -38,6 +38,8 @@ function App() {
             <Route path="/return" element={<Return />} />
             <Route path="/" element={<Home />} />
             <Route path="/mycart" element={<MyCart />} />
+            <Route path="/" element={<Events />} /> 
+            <Route path="/register/:eventId" element={<RegistrationPage />} />
           </Routes>
         </Sidebar>
       </Router>
