@@ -2,8 +2,6 @@ import "./App.css";
 
 import { CartProvider } from './pages/CartContext';
 
-// router imports
-
 import RegistrationPage from './pages/RegistrationPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Books from "./pages/Books";
