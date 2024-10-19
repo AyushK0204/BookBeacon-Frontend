@@ -1,107 +1,63 @@
-// import book1 from '../assets/book1.jpg'
-// import book2 from '../assets/book2.jpg'
-// import book3 from '../assets/book3.jpg'
-// import book4 from '../assets/book4.jpg'
-// import book5 from '../assets/book5.jpg'
-// import book6 from '../assets/book6.jpg'
-// import book7 from '../assets/book7.jpg'
-// import book8 from '../assets/book8.jpg'
-// import book9 from '../assets/book9.jpg'
-// import book10 from '../assets/book10.jpg'
-
-// export const books=[
-//   {
-//      id:1,
-//      name:'Book1',
-//      price:290,
-//      image:book1,
-//      Author:'auth1',
-//      slug:'book1-auth1'
-//   },
-
-// {
-//      id:2,
-//      name:'Book2',
-//      price:290,
-//      image:book2,
-//      Author:'auth2',
-//      slug:'book2-auth2'
-//   },
-//   {
-//     id:3,
-//     name:'Book3',
-//     price:290,
-//     image:book3,
-//     Author:'auth3',
-//     slug:'book3-auth3'
-//  },
-//  {
-//   id:4,
-//   name:'Book4',
-//   price:290,
-//   image:book4,
-//   Author:'auth4',
-//   slug:'book4-auth4'
-// },
-// {
-//   id:5,
-//   name:'Book5',
-//   price:290,
-//   image:book5,
-//   Author:'auth5',
-//   slug:'book5-auth5'
-// },
-// {
-//   id:6,
-//   name:'Book6',
-//   price:290,
-//   image:book6,
-//   Author:'auth6',
-//   slug:'book6-auth6'
-// },
-// {
-//   id:7,
-//   name:'Book7',
-//   price:290,
-//   image:book7,
-//   Author:'auth7',
-//   slug:'book7-auth7'
-// },
-// {
-//   id:8,
-//   name:'Book8',
-//   price:290,
-//   image:book8,
-//   Author:'auth8',
-//   slug:'book8-auth8'
-// },
-// {
-//   id:9,
-//   name:'Book9',
-//   price:290,
-//   image:book9,
-//   Author:'auth9',
-//   slug:'book9-auth9'
-// },
-// {
-//   id:10,
-//   name:'Book10',
-//   price:290,
-//   image:book10,
-//   Author:'auth10',
-//   slug:'book10-auth10'
-// }
-
-//]
-import React from 'react'
+import React from "react";
+import ProductFilter from "../components/filter";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { sortOptions } from "../index.jsx";
+import { ArrowUp, ArrowUpDown, ArrowUpDownIcon } from "lucide-react";
+import { Button } from "@/components/ui/button"; // Adjust the import based on your project structure
 
 const Books = () => {
   return (
-    <div>
-      
+    <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-6 p-4 md:p-6">
+      <ProductFilter />
+      <div className="bg-background w-full rounded-lg shadow-sm">
+        <div className="p-4 border-b flex items-center gap-96">
+          <h2 className="text-lg font-semibold">All Books</h2>
+          <div className="flex items-center gap-3 ml-96">
+            <span className="text-muted-foreground ">10 Products</span>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex items-center gap-1"
+                >
+                  <ArrowUpDownIcon className="h-4 w-4" />
+                  <span>Sort by</span>
+                </Button>
+              </DropdownMenuTrigger>
+
+              <DropdownMenuContent align="end" className="w-[200px]">
+                <DropdownMenuRadioGroup>
+                  {sortOptions.map((sortItem) => (
+                    <DropdownMenuRadioItem key={sortItem.id}>
+                      {sortItem.label}
+                    </DropdownMenuRadioItem>
+                  ))}
+                </DropdownMenuRadioGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+        </div>
+
+
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4"></div> 
+
+
+
+
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Books
-
+export default Books;
