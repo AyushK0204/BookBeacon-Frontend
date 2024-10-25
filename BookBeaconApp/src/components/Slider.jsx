@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import header1 from '../assets/homeheader2_files/library-slider-img-1.jpg'
+import header2 from '../assets/homeheader2_files/library-slider-img-2.jpg'
+import header3 from '../assets/homeheader2_files/library-slider-img-3.jpg'
+
+
 
 const Slider = () => {
     const images = [
-        'https://www.creativ-eras.com/assets/images/library-slider-img-2.jpg',
-        'https://www.creativ-eras.com/assets/images/library-slider-img-1.jpg',
-        'https://www.creativ-eras.com/assets/images/library-slider-img-3.jpg',
-    ];
+        header1,
+        header2,
+        header3
+          ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
