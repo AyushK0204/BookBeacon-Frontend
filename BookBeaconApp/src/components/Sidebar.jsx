@@ -53,20 +53,11 @@ const arr=[
   name:"Help",
   icon:<MdOutlineHelp />
 },
-
-
-
-{
-  path:"/return",
-  name:"Return",
-  icon:<LuBookUp2 />
-  
-},
-{
-  path:"/logout",
-  name:"Logout",
-  icon:<CiLogout />
-}
+// {
+//   path:"/logout",
+//   name:"Logout",
+//   icon:<CiLogout />
+// }
 ]
 
 

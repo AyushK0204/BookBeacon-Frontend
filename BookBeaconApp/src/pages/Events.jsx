@@ -38,7 +38,7 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="min-h-screen  py-10 pl-20">
+    <div className="w-screen min-h-screen bg-violet-200 py-10 pl-20">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-5xl font-bold text-violet-800 mb-6 animate-pulse text-center">Upcoming Events</h1>
         
@@ -50,7 +50,7 @@ const Events = () => {
             <p className="text-gray-600 mb-4">{event.description}</p>
             <Link 
               to={`/register/${event.id}`} 
-              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+              className="bg-violet-900 text-white py-2 px-4 rounded hover:bg-violet-400 transition"
             >
               Register Now
             </Link>

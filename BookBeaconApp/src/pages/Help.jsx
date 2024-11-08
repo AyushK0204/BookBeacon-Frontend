@@ -6,7 +6,7 @@ const Help = () => {
   const [isFurtherAssistanceOpen, setIsFurtherAssistanceOpen] = useState(false);
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen w-screen bg-violet-200">
       <div className="pl-14 pr-4 py-4">
         <h1 className="text-5xl font-bold text-violet-800 mb-6 animate-pulse text-center">Help & Support</h1>
 

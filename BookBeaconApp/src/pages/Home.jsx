@@ -4,6 +4,7 @@ import Slider from '../components/Slider'
 import Banner from '../assets/bannerlib.jpg'
 import Banner2 from '../assets/bannerlib2.jpg'
 import Banner3 from '../assets/libimg.jpg'
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 const Home = () => {
  
 
@@ -15,7 +16,8 @@ const Home = () => {
 
 
 
-<div className="w-full h-20 bg-purple-950"></div>
+<div className="w-full h-20 bg-purple-950">
+<p className="text-5xl text-center pt-4 font-extrabold text-white">Book Beacon</p></div>
 
 <p className='headpara text-8xl p-48 text-center font-bold font-serif '>
 Our Library Management System is Just What Your Libraries Needs
@@ -50,7 +52,23 @@ Our Library Management System is Just What Your Libraries Needs
 
 
 
-<div className="w-full h-28 bg-purple-800"></div>
+<div className="w-full h-28 bg-purple-800 text-white flex flex-col items-center justify-center">
+      <div className="flex space-x-6 mb-2">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <FaFacebook size={24} className="hover:text-blue-500" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FaInstagram size={24} className="hover:text-pink-500" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <FaTwitter size={24} className="hover:text-blue-400" />
+        </a>
+      </div>
+      
+      <p className="text-xl mb-1">Contact us:982838282 | bookbeacon@gmail.com</p>
+
+      <p className="text-xl">&copy; 2024 All rights reserved.</p>
+    </div>
 
 
 
