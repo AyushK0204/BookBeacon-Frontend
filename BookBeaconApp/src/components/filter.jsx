@@ -2,38 +2,11 @@ import { option } from "framer-motion/client";
 import { filterOptions } from "../index.jsx";
 import React, { Fragment,useState } from 'react';
 
-
-
-
-
 function ProductFilter({ onFilterChange })
 {
   
     const [selectedCategories, setSelectedCategories] = useState(new Set());
     const [selectedAuthors, setSelectedAuthors] = useState(new Set());
-
-
-
-
-    //for 1 category
-    // const handleCheckboxChange = (categoryId) => {
-    //     setSelectedCategories((prev) => {
-    //       const newSelection = new Set(prev);
-    //       if (newSelection.has(categoryId)) {
-    //         newSelection.delete(categoryId); 
-    //       } else {
-    //         newSelection.add(categoryId); 
-    //       }
-    //       onFilterChange(Array.from(newSelection));
-    //       return newSelection;
-    //     });
-    //   };
-
-
-
-
-
-    
 
     const handleCheckboxChange = (type, id) => {
         if (type === 'category') {
@@ -63,17 +36,9 @@ function ProductFilter({ onFilterChange })
         }
     };
 
-  
-    
-
-
     return(
 
         
-
-
-
-
 
         <div className="bg-background rounded-lg shadow-sm ml-10">
 
@@ -102,8 +67,6 @@ function ProductFilter({ onFilterChange })
                              <hr className="my-4" />
 
                             </Fragment>
-
-
 
 
 

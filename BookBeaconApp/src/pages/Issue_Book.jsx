@@ -1,6 +1,5 @@
 import React from 'react'
 import BooksForCartGrid from '../components/BooksForCartGrid';
-import cart from '../assets/cart.png'
 import { BiSearch } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 
@@ -20,15 +19,12 @@ const Issue_Book = () => {
                 <h1 className="text-2xl font-bold left-25">BookBeacon</h1>
                 <nav>
                     <ul className="flex space-x-10 mr-10 px-8">
-                 <h1 className='mr-16 ml-15'>    Redefining the Excellence of Information Technology Services Since 2005</h1>
+                 <h1 className='mr-16 ml-15'>    Redefining the Excellence of Information Technology Services</h1>
                     
                     
-                     {/* <li><a href="#bestsellers" className="hover:text-blue-400">Best Sellers</a></li> */}
-                     <li><Link to="/mycart" className="hover:text-blue-400">My Cart</Link></li>
+                     <li><Link to="/mycart" className="hover:text-blue-400">Issued Books</Link></li>
+                     <li><Link to="/help" className="hover:text-blue-400">Help</Link></li>   
                          
-                         <li><a href="#contact" className="hover:text-blue-400">Trending</a></li>
-
-                         <img src={cart} className="w-13 h-8 rounded-lg mt-47 ml-10" ></img>
            
                     </ul>
                 </nav>
@@ -41,7 +37,7 @@ const Issue_Book = () => {
    <br/>
    <br/>
 
-   <p className='header-text fs-18 fw-3 mt-40 font-normal'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio amet tempore omnis odit soluta nobis in consequuntur, aspernatur, molestias numquam eos facere reiciendis officia sequi animi dolores vel? Exercitationem, debitis!</p>
+   <p className='header-text fs-18 fw-3 mt-40 font-normal text-white font-semibold'>From academic resources to leisure reading, our books page is designed to help you find exactly what you're looking for.</p>
   
   
    <div className="search-form mx-auto w-1/2 p-5">

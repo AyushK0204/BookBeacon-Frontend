@@ -9,15 +9,15 @@ const MyCart = () => {
           
            <div className=' w-screen h-screen'>
            
-            <h1 className=' p-5 text-center font-bold text-7xl '>My Cart🛒</h1>
+            <h1 className=' p-5 text-center font-bold text-7xl '>My Books</h1>
            
             {cartItems.length === 0 ? (
-                <p className='p-20'>Your cart is empty 😥</p>
+                <p className='p-20 text-xl'>Your selected no books 😥</p>
             ) : (
                 <ul className=' w-screen h-screen  p-20 '>
                     {cartItems.map(item => (
                        
-                        <li key={item.id} className='mt-5 ml-10 rounded-xl bg-violet-300 p-10 text-center '>
+                        <li key={item.id} className='mt-5 ml-10 rounded-xl bg-violet-500 p-10 text-center '>
                          <div className='flex'>
                            <img  src={item.image} className="w-53 h-48 rounded-lg mt-47 ml-10 transition-transform duration-200 hover:scale-110" ></img>
                            
@@ -43,6 +43,3 @@ const MyCart = () => {
 };
 
 export default MyCart;
-
-
-

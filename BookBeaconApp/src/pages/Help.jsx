@@ -43,14 +43,7 @@ const Help = () => {
               <div className="mb-6">
                 <h3 className="text-xl font-medium text-gray-800">How do I issue a book?</h3>
                 <p className="text-gray-600">
-                  After finding the book you want, click on the "Add to cart" button. Make sure you are logged in with your account to complete the process.
-                </p>
-              </div>
-
-              <div className="mb-6">
-                <h3 className="text-xl font-medium text-gray-800">..?</h3>
-                <p className="text-gray-600">
-                 ...
+                  After finding the book you want, click on the "Issue Now" button.
                 </p>
               </div>
             </>

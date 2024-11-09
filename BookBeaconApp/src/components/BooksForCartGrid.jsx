@@ -33,7 +33,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
            price:1090,
            image:book1,
            Author:'France Hodgson',
-           slug:'book1-auth1'
         },
       
       {
@@ -42,7 +41,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
            price:720,
            image:book2,
            Author:'H.G Wells',
-           slug:'book2-auth2'
         },
         {
           id:3,
@@ -50,7 +48,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
           price:780,
           image:book3,
           Author:'Anita Krishan',
-          slug:'book3-auth3'
        },
        {
         id:4,
@@ -58,7 +55,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:700,
         image:book4,
         Author:'Ruskin Bond',
-        slug:'book4-auth4'
       },
       {
         id:5,
@@ -66,7 +62,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:250,
         image:book5,
         Author:'Sudha Murthy',
-        slug:'book5-auth5'
       },
       {
         id:6,
@@ -74,7 +69,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:800,
         image:book6,
         Author:'F. Scott FitzGerald',
-        slug:'book6-auth6'
       },
       {
         id:7,
@@ -82,7 +76,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:1290,
         image:book7,
         Author:'Kelvin Missal',
-        slug:'book7-auth7'
       },
       {
         id:8,
@@ -90,7 +83,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:950,
         image:book8,
         Author:'Thomas Hardy',
-        slug:'book8-auth8'
       },
       {
         id:9,
@@ -98,7 +90,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:890,
         image:book9,
         Author:'E . Nesbit',
-        slug:'book9-auth9'
       },
       {
         id:10,
@@ -106,7 +97,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:1000,
         image:book10,
         Author:'Nicollas Machiavelli',
-        slug:'book10-auth10'
       },
       {
         id:11,
@@ -114,7 +104,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:990,
         image:book11,
         Author:'William Shakespeare',
-        slug:'book10-auth10'
       },
       {
         id:12,
@@ -122,7 +111,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
         price:690,
         image:book12,
         Author:'Saranya Umakanthan',
-        slug:'book10-auth10'
       }
 ,
 {
@@ -131,7 +119,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
     price:700,
     image:book13,
     Author:'James Allen',
-    slug:'book10-auth10'
   },
   {
     id:14,
@@ -139,7 +126,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
     price:1090,
     image:book14,
     Author:'Kahlil Gibran',
-    slug:'book10-auth10'
   },
   {
     id:15,
@@ -147,7 +133,6 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
     price:990,
     image:book15,
     Author:'Mary Shelley',
-    slug:'book10-auth10'
   }
       ]  
     
@@ -165,8 +150,7 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
       addToCart(bookName);
 
 
-           //toast msg 
-          setToastMessage(`Added "${bookName.name}" to cart ✅ !`);
+          setToastMessage(`You selected "${bookName.name}" ✅ !`);
   
           setTimeout(() => {
               setToastMessage('');
@@ -187,23 +171,24 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
   return (
 <div>
 
-    <h1 className=' mt-10 text-3xl text-center text-violet-900 font-semibold h-10 '>Recommended For You</h1>
+    <h1 className=' mt-10 text-3xl text-center text-violet-400 font-semibold h-10 '>Recommended For You</h1>
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-14 p-3  '>
     
    {
       books.map((item,index)=>{return(
-        <div className="border w-full p-4 bg-violet-200 rounded-lg shadow-md mt-10 flex flex-col items-center">
+        <div className="border w-full p-4 bg-violet-400 rounded-lg shadow-md mt-10 flex flex-col items-center">
         <img  src={item.image} className="w-53 h-48 rounded-lg mt-47 ml-10 transition-transform duration-200 hover:scale-150" ></img>
       
       <div className=''> 
          <h2 className="text-xl font-bold text-center">{item.name}</h2>
-        <p className="text-violet-900 font-semibold text-center">{item.Author}</p>
+        <p className="text-white font-semibold text-center">{item.Author}</p>
         <p className="text-lg font-bold text-center">Rs{item.price}/-</p>
+        
         <button 
             onClick={()=>onAddTomyCart(item)} 
-            className="mt-2 bg-green-500 text-white py-1 px-3 rounded  ml-10 transition-transform duration-200 hover:scale-110 hover:bg-green-600"
+            className="mt-2 bg-violet-700 text-white py-1 px-3 rounded  ml-10 transition-transform duration-200 hover:scale-110 hover:bg-violet-300"
         >
-            Add to Cart
+            Issue Book
         </button>
     </div>
     </div>
@@ -214,11 +199,10 @@ const BooksForCartGrid = ({ title, author, price, onAddToCart }) => {
    {toastMessage && <Toast message={toastMessage} onClose={() => setToastMessage('')} />}
   
 
-  <div className='w-screen mt-10 h-40 bg-white-900 bg-zinc-100  text-center flex flex-col space-y-4'>
+  <div className='w-screen mt-10 h-40  bg-zinc-100  text-center flex flex-col space-y-4'>
 
-<p className='mt-5 font-semibold'>See Personalized Recommendations</p>
-<div ><button className='bg-yellow-300 w-58 h-10 px-4 rounded  '>Sign In</button></div>
-<p><Link to="/" className="hover:text-blue-400">Back To Top</Link></p>
+
+<p><Link to="/" className="mt-20 text-2xl font-semibold text-violet-900 hover:text-blue-400">Back To Home</Link></p>
 
   </div>
 

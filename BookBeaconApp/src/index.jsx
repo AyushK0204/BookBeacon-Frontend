@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import book1 from '../src/assets/book1.jpg'
 import book2 from '../src/assets/book2.jpg'
@@ -66,12 +64,12 @@ export const sortOptions=[
 export const booklist=[
   {
      id:1,
-     name:'The secret Garden',
+     name:'The Secret Garden',
      price:1090,
      category:"FairyTales",
      image:book1,
      Author:'France Hodgson',
-     slug:'book1-auth1'
+     desc:'The Secret Garden by Frances Hodgson Burnett is a classic tale of transformation and friendship. The story follows Mary Lennox, a spoiled and lonely young girl who, after being orphaned, is sent to live at her uncles mysterious estate in England. There, she discovers a hidden, neglected garden and begins restoring it, finding purpose and joy in the process. Alongside new friends, she learns about love, resilience, and the healing power of nature. This beautifully written story captures the magic of friendship, the beauty of the natural world, and the potential for personal growth and redemption.'
   },
 
 {
@@ -81,7 +79,7 @@ export const booklist=[
      category:"Adventures",
      image:book2,
      Author:'H.G Wells',
-     slug:'book2-auth2'
+     desc:'The Time Machine by H.G. Wells follows a Victorian scientist known only as "The Time Traveller," who builds a machine capable of journeying through time. Venturing far into the future, he encounters the peaceful Eloi and the sinister Morlocks, uncovering unsettling truths about humanitys evolution. Through his adventures, the novel explores themes of class disparity, survival, and the unpredictable course of human progress.'
   },
   {
     id:3,
@@ -90,7 +88,7 @@ export const booklist=[
     category:"Horror",
     image:book3,
     Author:'Anita Krishan',
-    slug:'book3-auth3'
+    desc:'Ghosts of Silent Hills by Anita Krishan is a chilling collection of supernatural tales set in the eerie, mist-covered hills of India. Each story reveals haunting encounters with restless spirits, exploring themes of fear, revenge, and the mysteries of the afterlife. Rich in atmospheric detail, the book captures the haunting beauty and lurking darkness of remote hill stations, making for a suspenseful and spine-tingling read.'
  },
  {
   id:4,
@@ -99,7 +97,7 @@ export const booklist=[
   image:book4,
   category:"Humour",
   Author:'Ruskin Bond',
-  slug:'book4-auth4'
+  desc:'The Blue Umbrella by Ruskin Bond is a charming story set in a small Himalayan village, following a young girl named Binya who acquires a beautiful blue umbrella that becomes the envy of everyone around. This simple yet poignant tale explores themes of kindness, jealousy, and the value of generosity, capturing the innocence of childhood and the beauty of village life.'
 },
 {
   id:5,
@@ -108,7 +106,7 @@ export const booklist=[
   image:book5,
   category:"History Fiction",
   Author:'Sudha Murthy',
-  slug:'book5-auth5'
+  desc:'The Magic of the Lost Temple by Sudha Murthy follows 12-year-old Nooni as she spends her summer in a quaint village and stumbles upon an ancient stepwell with a fascinating history. Through her adventures, she learns about Indian culture, rural life, and the power of curiosity, making this a delightful and educational story filled with warmth and discovery.'
 },
 {
   id:6,
@@ -117,7 +115,7 @@ export const booklist=[
   image:book6,
   category:"Thriller",
   Author:'F. Scott FitzGerald',
-  slug:'book6-auth6'
+  desc:'The Great Gatsby by F. Scott Fitzgerald is a tragic tale of wealth, love, and ambition set in the Jazz Age. It follows the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan, revealing the disillusionment beneath the glitzy surface of the American Dream. Through Gatsbys rise and fall, the novel explores themes of class, aspiration, and the elusive pursuit of happiness.'
 },
 {
   id:7,
@@ -126,7 +124,7 @@ export const booklist=[
   image:book7,
   category:"Thriller",
   Author:'Kelvin Missal',
-  slug:'book7-auth7'
+  desc:'The Kalki Trilogy by Kevin Missal is an action-packed mythological series that reimagines the story of Kalki, the final avatar of Vishnu, destined to bring balance in a world descending into darkness. Blending ancient Indian mythology with thrilling adventure, the trilogy follows Kalki’s journey from a simple village boy to a powerful hero confronting evil forces, exploring themes of duty, destiny, and the battle between good and evil.'
 },
 {
   id:8,
@@ -135,16 +133,16 @@ export const booklist=[
   image:book8,
   category:"Fantasy",
   Author:'Thomas Hardy',
-  slug:'book8-auth8'
+  desc:'Far from the Madding Crowd by Thomas Hardy is a classic novel set in rural England, centered around the independent and spirited Bathsheba Everdene. As she inherits a farm and attracts the attention of three very different suitors, Bathsheba navigates love, heartbreak, and the challenges of life in a close-knit farming community. The novel explores themes of love, resilience, and the impact of personal choices amid the beauty and hardships of pastoral life.'
 },
 {
   id:9,
-  name:'    Railway Children',
+  name:'Railway Children',
   price:890,
   image:book9,
   category:"Thriller",
   Author:'E . Nesbit',
-  slug:'book9-auth9'
+  desc:'The Railway Children by E. Nesbit is a heartwarming story about three children—Roberta, Peter, and Phyllis—who are forced to move to a small countryside home after their father is wrongfully imprisoned. As they adapt to their new life, the children form a special bond with the local railway and its workers, leading to a series of adventures and a heartwarming reunion. The novel celebrates themes of courage, family, and the power of kindness.'
 },
 {
   id:10,
@@ -153,7 +151,7 @@ export const booklist=[
   image:book10,
   category:"Fantasy",
   Author:'Nicollas Machiavelli',
-  slug:'book10-auth10'
+  desc:'The Prince by Niccolò Machiavelli is a political treatise offering practical advice on power, leadership, and statecraft. Written in the 16th century, it examines the qualities a ruler should possess to gain and maintain power, advocating for pragmatic and sometimes ruthless strategies. The book is known for its controversial ideas on politics, morality, and the nature of authority, often summed up by the phrase "the ends justify the means."'
 },
 {
   id:11,
@@ -161,8 +159,7 @@ export const booklist=[
   price:990,
   image:book11,
   category:"History Fiction",
-  Author:'William Shakespeare',
-  slug:'book10-auth10'
+  Author:'William Shakespeare'
 },
 {
   id:12,
@@ -170,8 +167,7 @@ export const booklist=[
   price:690,
   image:book12,
   category:"Science Fiction",
-  Author:'Saranya Umakanthan',
-  slug:'book10-auth10'
+  Author:'Saranya Umakanthan'
 }
 ,
 {
@@ -180,8 +176,7 @@ name:'As a Man Thinketh',
 price:700,
 image:book13,
 category:"Horror",
-Author:'James Allen',
-slug:'book10-auth10'
+Author:'James Allen'
 },
 {
 id:14,
@@ -189,8 +184,7 @@ name:'The Prophet',
 price:1090,
 image:book14,
 category:"Science Fiction",
-Author:'Kahlil Gibran',
-slug:'book10-auth10'
+Author:'Kahlil Gibran'
 },
 {
 id:15,
@@ -198,8 +192,7 @@ name:'Frankenstein',
 price:990,
 image:book15,
 category:"Adventures",
-Author:'Mary Shelley',
-slug:'book10-auth10'
+Author:'Mary Shelley'
 },
 {
 id:16,
@@ -207,8 +200,7 @@ name:'Lallan Sweets',
 price:650,
 image:book16,
 category:"Humour",
-Author:'Shristi C',
-slug:'book10-auth10'
+Author:'Shristi C'
 },
 {
 id:17,
@@ -216,8 +208,7 @@ name:'Silent Girl',
 price:400,
 image:book17,
 category:"Horror",
-Author:'Blake Pierce',
-slug:'book10-auth10'
+Author:'Blake Pierce'
 },
 {
 id:18,
@@ -225,8 +216,7 @@ name:'Samsara',
 price:790,
 image:book18,
 category:"History Fiction",
-Author:'Saksham Garg',
-slug:'book10-auth10'
+Author:'Saksham Garg'
 },
 {
 id:19,
@@ -234,8 +224,7 @@ name:'Sherlock Holmes',
 price:590,
 image:book19,
 category:"Adventures",
-Author:'Arthur C Doyle',
-slug:'book10-auth10'
+Author:'Arthur C Doyle'
 },
 {
 id:20,
@@ -243,8 +232,7 @@ name:'Ove',
 price:490,
 image:book20,
 category:"Humour",
-Author:'Fredrick Backman',
-slug:'book10-auth10'
+Author:'Fredrick Backman'
 },
 {
 id:21,
@@ -252,8 +240,7 @@ name:'Time Keepers',
 price:780,
 image:book21,
 category:"Science Fiction",
-Author:'S Nambiath',
-slug:'book10-auth10'
+Author:'S Nambiath'
 },
 {
 id:22,
@@ -261,8 +248,7 @@ name:'Cymbeline',
 price:590,
 image:book22,
 category:"FairyTales",
-Author:'William Shakespeare',
-slug:'book10-auth10'
+Author:'William Shakespeare'
 },
 {
 id:23,
@@ -270,8 +256,7 @@ name:'Pride & Prejudice',
 price:980,
 image:book23,
 category:"Fantasy",
-Author:'Jane Austen',
-slug:'book10-auth10'
+Author:'Jane Austen'
 }
 ,
 {
@@ -280,8 +265,7 @@ name:'Harry Potter',
 price:1080,
 image:book24,
 category:"FairyTales",
-Author:'JK Rowling',
-slug:'book10-auth10'
+Author:'JK Rowling'
 }
 ,
 {
@@ -290,8 +274,7 @@ name:'Eves Diary',
 price:800,
 image:book25,
 category:"FairyTales",
-Author:'Mark Twain',
-slug:'book10-auth10'
+Author:'Mark Twain'
 },
 {
 id:26,
@@ -299,8 +282,7 @@ name:'David CopperField',
 price:900,
 image:book26,
 category:"Fantasy",
-Author:'Charles Dickens',
-slug:'book10-auth10'
+Author:'Charles Dickens'
 },
 {
 id:27,
@@ -308,7 +290,6 @@ name:'The Alchemist',
 price:400,
 image:book27,
 category:"Science Fiction",
-Author:'Paulo Coelho',
-slug:'book10-auth10'
+Author:'Paulo Coelho'
 }
 ]  

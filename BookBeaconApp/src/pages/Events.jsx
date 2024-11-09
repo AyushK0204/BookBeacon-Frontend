@@ -38,12 +38,12 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="w-screen min-h-screen bg-violet-200 py-10 pl-20">
+    <div className="w-screen min-h-screen  py-10 pl-20">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl font-bold text-violet-800 mb-6 animate-pulse text-center">Upcoming Events</h1>
+        <h1 className="text-5xl font-bold text-violet-800 mb-6 text-center">Upcoming Events</h1>
         
         {events.map((event) => (
-          <div key={event.id} className="bg-white shadow-md rounded-lg p-6 mb-4">
+          <div key={event.id} className="bg-violet-200 shadow-md rounded-lg p-6 mb-4">
             <h2 className="text-2xl font-semibold text-gray-800">{event.title}</h2>
             <p className="text-gray-600">{event.date} | {event.time}</p>
             <p className="text-gray-600 mb-4">Location: {event.location}</p>

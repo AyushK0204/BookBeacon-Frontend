@@ -14,7 +14,8 @@ import { CgProfile } from "react-icons/cg";
 import { LuBookUp2 } from "react-icons/lu";
 import { FaBars } from "react-icons/fa";
 import { BiSearch } from "react-icons/bi";
-// creating an array
+import { FaBook } from "react-icons/fa";
+
 const arr=[
         {
             path:"/",
@@ -53,10 +54,15 @@ const arr=[
   name:"Help",
   icon:<MdOutlineHelp />
 },
+{ 
+  path:"/return",
+  name:"Return",
+  icon:<FaBook />
+},
 // {
-//   path:"/logout",
-//   name:"Logout",
-//   icon:<CiLogout />
+//    path:"/logout",
+//    name:"Logout",
+//    icon:<CiLogout />
 // }
 ]
 
@@ -64,10 +70,6 @@ const arr=[
 
 
 const Sidebar = ({children}) => {
-
-
-
-
 
 
 
@@ -95,10 +97,6 @@ const [open,setIsOpen]=useState(false);
                 { open && <h1 className='nav_logo'> Hello,Sign in </h1>}
                  </div>
 
-
-
-
-
 <div className="nav_search">
  
   <div className="search_icon">
@@ -110,15 +108,6 @@ const [open,setIsOpen]=useState(false);
    }
 
 </div>
-
-
-
-
-                   
-
-
-
-
 
            <section className="links">
 

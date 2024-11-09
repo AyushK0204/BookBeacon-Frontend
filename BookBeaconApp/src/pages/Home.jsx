@@ -1,9 +1,9 @@
-// Home.jsx
 import React, { useState } from 'react';
 import Slider from '../components/Slider'
 import Banner from '../assets/bannerlib.jpg'
 import Banner2 from '../assets/bannerlib2.jpg'
 import Banner3 from '../assets/libimg.jpg'
+import logo from '../assets/logo.png'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 const Home = () => {
  
@@ -15,13 +15,18 @@ const Home = () => {
 <div className='w-screen h-screen  items-center justify-center'>
 
 
+<div className="w-full h-20 bg-purple-950 flex items-center justify-center">
+  <img src={logo} className="w-20 h-20 rounded-full mr-2" />
+  <p className="text-5xl font-extrabold text-white">
+    Book Beacon
+  </p>
+</div>
 
-<div className="w-full h-20 bg-purple-950">
-<p className="text-5xl text-center pt-4 font-extrabold text-white">Book Beacon</p></div>
-
-<p className='headpara text-8xl p-48 text-center font-bold font-serif '>
-Our Library Management System is Just What Your Libraries Needs
+<p className='headpara text-8xl p-48 text-center font-bold font-serif'>
+  Our Library Management System is Just What Your Library Needs
 </p>
+
+
 
 <div className="w-screen h-96 flex items-center justify-center ml-10 mt-10">
             <Slider />
@@ -44,7 +49,7 @@ Our Library Management System is Just What Your Libraries Needs
 <div className="text-center pl-20 mt-28">
   <h1 className='font-bold text-6xl text-violet-800'>Main Features</h1>
   <br/>
-  <p className='font-semi mt-10 text-2xl text-violet-900 text-left'>Library management system offers a simple yet powerful solution to automate libraries. It is an internet / intranet based solution designed to enhance the total library experience through value added services and features. The software helps you manage print material like books, journals and magazines along with the non-print materials like CD, DVD, E-Journal, etc.</p>
+  <p className='font-semi mt-10 text-2xl text-violet-900 text-left'>Our Library Management System offers centralized book management, allowing users to easily browse, search, view details, and issue books through a simple, intuitive interface. The design is user-friendly and navigation that creates a smooth and welcoming experience. Advanced filtering options allow users to sort books by categories like genre and author. The system is built to be responsive, ensuring seamless functionality across various devices and screen sizes. The modern aesthetic, with a bold color scheme and sleek UI elements, provides an attractive and professional look to enhance the overall user experience.</p>
 </div> 
   <img  src={Banner3} className="w-53 h-3/5 rounded-lg mt-28  transition-transform duration-200 hover:scale-110" ></img>
 </div>
