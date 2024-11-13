@@ -10,7 +10,7 @@ const BookDetails = () => {
     return <div>Book not found!</div>;
   }
 
-  const { name, price, image, category, Author,desc} = book;
+  const { name, price, image, category, Author,desc,isbn} = book;
 
   return (
     <div className="max-w-4xl mx-auto p-4 ml-48 mt-20">
@@ -20,6 +20,7 @@ const BookDetails = () => {
           <h1 className="text-4xl font-bold mb-4 text-center">{name}</h1>
           <p className="text-xl mb-2"><strong>Price: </strong>{price} /-</p>
           <p className="text-xl mb-4"><strong>Author: </strong>{Author}</p>
+          <p className="text-xl mb-2"><strong>ISBN: </strong>{isbn}</p>
           <p className="text-xl  mb-4"><strong>Description: </strong> {desc}</p>
         </div>
       </div>

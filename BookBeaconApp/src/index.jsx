@@ -69,8 +69,9 @@ export const booklist=[
      category:"FairyTales",
      image:book1,
      Author:'France Hodgson',
-     desc:'The Secret Garden by Frances Hodgson Burnett is a classic tale of transformation and friendship. The story follows Mary Lennox, a spoiled and lonely young girl who, after being orphaned, is sent to live at her uncles mysterious estate in England. There, she discovers a hidden, neglected garden and begins restoring it, finding purpose and joy in the process. Alongside new friends, she learns about love, resilience, and the healing power of nature. This beautifully written story captures the magic of friendship, the beauty of the natural world, and the potential for personal growth and redemption.'
-  },
+     desc:'The Secret Garden by Frances Hodgson Burnett is a classic tale of transformation and friendship. The story follows Mary Lennox, a spoiled and lonely young girl who, after being orphaned, is sent to live at her uncles mysterious estate in England. There, she discovers a hidden, neglected garden and begins restoring it, finding purpose and joy in the process. Alongside new friends, she learns about love, resilience, and the healing power of nature. This beautifully written story captures the magic of friendship, the beauty of the natural world, and the potential for personal growth and redemption.',
+     isbn:'978-3-16-148410-0'
+    },
 
 {
      id:2,
@@ -79,7 +80,8 @@ export const booklist=[
      category:"Adventures",
      image:book2,
      Author:'H.G Wells',
-     desc:'The Time Machine by H.G. Wells follows a Victorian scientist known only as "The Time Traveller," who builds a machine capable of journeying through time. Venturing far into the future, he encounters the peaceful Eloi and the sinister Morlocks, uncovering unsettling truths about humanitys evolution. Through his adventures, the novel explores themes of class disparity, survival, and the unpredictable course of human progress.'
+     desc:'The Time Machine by H.G. Wells follows a Victorian scientist known only as "The Time Traveller," who builds a machine capable of journeying through time. Venturing far into the future, he encounters the peaceful Eloi and the sinister Morlocks, uncovering unsettling truths about humanitys evolution. Through his adventures, the novel explores themes of class disparity, survival, and the unpredictable course of human progress.',
+     isbn:'978-3-16-148410-0'
   },
   {
     id:3,
@@ -88,7 +90,8 @@ export const booklist=[
     category:"Horror",
     image:book3,
     Author:'Anita Krishan',
-    desc:'Ghosts of Silent Hills by Anita Krishan is a chilling collection of supernatural tales set in the eerie, mist-covered hills of India. Each story reveals haunting encounters with restless spirits, exploring themes of fear, revenge, and the mysteries of the afterlife. Rich in atmospheric detail, the book captures the haunting beauty and lurking darkness of remote hill stations, making for a suspenseful and spine-tingling read.'
+    desc:'Ghosts of Silent Hills by Anita Krishan is a chilling collection of supernatural tales set in the eerie, mist-covered hills of India. Each story reveals haunting encounters with restless spirits, exploring themes of fear, revenge, and the mysteries of the afterlife. Rich in atmospheric detail, the book captures the haunting beauty and lurking darkness of remote hill stations, making for a suspenseful and spine-tingling read.',
+    isbn:'978-3-16-148410-0'
  },
  {
   id:4,
@@ -97,7 +100,8 @@ export const booklist=[
   image:book4,
   category:"Humour",
   Author:'Ruskin Bond',
-  desc:'The Blue Umbrella by Ruskin Bond is a charming story set in a small Himalayan village, following a young girl named Binya who acquires a beautiful blue umbrella that becomes the envy of everyone around. This simple yet poignant tale explores themes of kindness, jealousy, and the value of generosity, capturing the innocence of childhood and the beauty of village life.'
+  desc:'The Blue Umbrella by Ruskin Bond is a charming story set in a small Himalayan village, following a young girl named Binya who acquires a beautiful blue umbrella that becomes the envy of everyone around. This simple yet poignant tale explores themes of kindness, jealousy, and the value of generosity, capturing the innocence of childhood and the beauty of village life.',
+  isbn:'978-3-16-148410-0'
 },
 {
   id:5,
@@ -106,6 +110,7 @@ export const booklist=[
   image:book5,
   category:"History Fiction",
   Author:'Sudha Murthy',
+  isbn:'978-3-16-148410-0',
   desc:'The Magic of the Lost Temple by Sudha Murthy follows 12-year-old Nooni as she spends her summer in a quaint village and stumbles upon an ancient stepwell with a fascinating history. Through her adventures, she learns about Indian culture, rural life, and the power of curiosity, making this a delightful and educational story filled with warmth and discovery.'
 },
 {
@@ -115,6 +120,7 @@ export const booklist=[
   image:book6,
   category:"Thriller",
   Author:'F. Scott FitzGerald',
+  isbn:'978-3-16-148410-0',
   desc:'The Great Gatsby by F. Scott Fitzgerald is a tragic tale of wealth, love, and ambition set in the Jazz Age. It follows the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan, revealing the disillusionment beneath the glitzy surface of the American Dream. Through Gatsbys rise and fall, the novel explores themes of class, aspiration, and the elusive pursuit of happiness.'
 },
 {
@@ -124,6 +130,7 @@ export const booklist=[
   image:book7,
   category:"Thriller",
   Author:'Kelvin Missal',
+  isbn:'978-3-16-148410-0',
   desc:'The Kalki Trilogy by Kevin Missal is an action-packed mythological series that reimagines the story of Kalki, the final avatar of Vishnu, destined to bring balance in a world descending into darkness. Blending ancient Indian mythology with thrilling adventure, the trilogy follows Kalki’s journey from a simple village boy to a powerful hero confronting evil forces, exploring themes of duty, destiny, and the battle between good and evil.'
 },
 {
@@ -133,6 +140,7 @@ export const booklist=[
   image:book8,
   category:"Fantasy",
   Author:'Thomas Hardy',
+  isbn:'978-3-16-148410-0',
   desc:'Far from the Madding Crowd by Thomas Hardy is a classic novel set in rural England, centered around the independent and spirited Bathsheba Everdene. As she inherits a farm and attracts the attention of three very different suitors, Bathsheba navigates love, heartbreak, and the challenges of life in a close-knit farming community. The novel explores themes of love, resilience, and the impact of personal choices amid the beauty and hardships of pastoral life.'
 },
 {
@@ -142,6 +150,7 @@ export const booklist=[
   image:book9,
   category:"Thriller",
   Author:'E . Nesbit',
+  isbn:'978-3-16-148410-0',
   desc:'The Railway Children by E. Nesbit is a heartwarming story about three children—Roberta, Peter, and Phyllis—who are forced to move to a small countryside home after their father is wrongfully imprisoned. As they adapt to their new life, the children form a special bond with the local railway and its workers, leading to a series of adventures and a heartwarming reunion. The novel celebrates themes of courage, family, and the power of kindness.'
 },
 {
@@ -151,6 +160,7 @@ export const booklist=[
   image:book10,
   category:"Fantasy",
   Author:'Nicollas Machiavelli',
+  isbn:'978-3-16-148410-0',
   desc:'The Prince by Niccolò Machiavelli is a political treatise offering practical advice on power, leadership, and statecraft. Written in the 16th century, it examines the qualities a ruler should possess to gain and maintain power, advocating for pragmatic and sometimes ruthless strategies. The book is known for its controversial ideas on politics, morality, and the nature of authority, often summed up by the phrase "the ends justify the means."'
 },
 {
@@ -159,6 +169,7 @@ export const booklist=[
   price:990,
   image:book11,
   category:"History Fiction",
+  isbn:'978-3-16-148410-0',
   Author:'William Shakespeare'
 },
 {

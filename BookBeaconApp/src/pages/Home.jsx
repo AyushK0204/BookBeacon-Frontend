@@ -5,22 +5,25 @@ import Banner2 from '../assets/bannerlib2.jpg'
 import Banner3 from '../assets/libimg.jpg'
 import logo from '../assets/logo.png'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Home = () => {
- 
-
 
   return (
-   
 
 <div className='w-screen h-screen  items-center justify-center'>
 
+  <div className="w-full h-20 bg-purple-950 flex items-center justify-between px-8">
+    <div className="flex items-center mx-auto">
+      <img src={logo} className="w-20 h-20 rounded-full mr-2" alt="logo" />
+      <p className="text-5xl font-extrabold text-white">
+        Book Beacon
+      </p>
+    </div>
+    <Link to="/login" className="text-xl font-semibold text-white hover:text-violet-300">
+      Login
+    </Link>
+  </div>
 
-<div className="w-full h-20 bg-purple-950 flex items-center justify-center">
-  <img src={logo} className="w-20 h-20 rounded-full mr-2" />
-  <p className="text-5xl font-extrabold text-white">
-    Book Beacon
-  </p>
-</div>
 
 <p className='headpara text-8xl p-48 text-center font-bold font-serif'>
   Our Library Management System is Just What Your Library Needs
@@ -54,9 +57,6 @@ const Home = () => {
   <img  src={Banner3} className="w-53 h-3/5 rounded-lg mt-28  transition-transform duration-200 hover:scale-110" ></img>
 </div>
 
-
-
-
 <div className="w-full h-28 bg-purple-800 text-white flex flex-col items-center justify-center">
       <div className="flex space-x-6 mb-2">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -74,16 +74,7 @@ const Home = () => {
 
       <p className="text-xl">&copy; 2024 All rights reserved.</p>
     </div>
-
-
-
 </div>
-   
-        
-        
-
-
   );
 };
-
 export default Home;
