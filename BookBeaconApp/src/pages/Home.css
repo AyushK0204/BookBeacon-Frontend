@@ -1,0 +1,52 @@
+
+.slider {
+   
+    position:relative;
+    width: 1350px; 
+    margin: auto;
+    
+    
+  }
+  
+  .slider-container {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider img {
+    
+    width: 100%; 
+    border-radius: 8px;
+ 
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+   
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .prev {
+    background-color: rgb(207, 205, 205);
+    left: 10px;
+    border:none;
+    color:rgb(255, 255, 255);
+  }
+  
+  .next {
+    right: 10px;
+    background-color: rgb(207, 205, 205);
+  
+    border:none;
+    color:rgb(255, 255, 255);
+  }
+
+
